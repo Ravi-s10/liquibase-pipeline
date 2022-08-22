@@ -21,7 +21,7 @@ steps{
    {
       steps{
       sh '''
-      echo file1['app']
+      echo file1['app']['id']
       
       '''
       }
