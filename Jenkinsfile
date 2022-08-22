@@ -20,7 +20,7 @@ steps{
                               email = file1['app']['email']
                               regions1 = file1['app']['region'][0]
                         regions2 = file1['app']['region'][01]
-                              envprops = file1['env_prop']['qa'][0]
+                              envprops = file1['env_prop']['qa']['aws_acc']
                         
                             
                             
