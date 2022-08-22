@@ -17,7 +17,7 @@ steps{
                              file1 = readYaml file: "input_template.yaml"
                               name = file1['app']['name']
                               email = file1['app']['email']
-                              regions = file1['app']['region']
+                              regions = file1['app']['region'][0]
                               envprops = file1['env_prop']['qa']
                         
                             
