@@ -8,6 +8,8 @@ def envprops
 
                         
 def is_skip(){
+  
+  if (envprops == true)
   println("okayyy")
  
   
