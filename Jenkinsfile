@@ -51,7 +51,7 @@ steps{
    }
 
   
-       stage("Reading attribute from yaml")
+       stage("Reading attribute new from yaml")
    {
       steps{
       
