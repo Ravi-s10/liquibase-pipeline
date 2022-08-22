@@ -1,0 +1,34 @@
+---
+app:
+  id: 123
+  name: rad
+  email: ravisharma82106@gmail.com
+  region:
+    - us-east-1
+    - us-west-2
+    
+    
+    
+env_prop:
+  dev:
+    aws_acc: 7812935905
+    secretpath: rad/bad/liquibase
+    approval: true
+  
+  
+  qa:
+    aws_acc: 7822935905
+    secretpath: rad/bad/liquibase
+    approval: true
+  
+  uat:
+    aws_acc: 128924836
+    secretpath: rad/kas/list
+    approval: true
+    skip:  true
+    
+    
+  prod:
+    aws_acc: 927489235689
+    secretpath: rod/pod/git
+  
