@@ -24,8 +24,9 @@ steps{
                               name = file1['app']['name']
                               email = file1['app']['email']
                               regions1 = file1['app']['region'][0]
-                        regions2 = file1['app']['region'][01]
+                               regions2 = file1['app']['region'][01]
                               envprops = file1['env_prop']['uat']['skip']
+                        env_name = file1['env_prop'][0]
 
                         
                             
@@ -42,27 +43,32 @@ steps{
         echo "${email}"
         echo "${regions1}"
         echo "${envprops}"
-        is_skip()
+        echo "${env_name}"
+     
       
      
       }
    }
 
+  
+       stage("Reading attribute from yaml")
+   {
+      steps{
+      
+        echo "${name}"
+        echo "${email}"
+        echo "${regions1}"
+        echo "${envprops}"
+    
+      
+     
+      }
+   }
 
 }
-
-  
-  
-  
   
   
   
   }
-  def is_skip(){
-  
-    if ("${envprops}" == "true")
-  println("okayyy")
- 
-  
-}
+
 
