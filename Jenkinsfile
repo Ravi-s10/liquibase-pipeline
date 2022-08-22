@@ -2,7 +2,8 @@ def file1
 def app
 def name
 def email
-def region
+def region1
+def region2
 
 pipeline {
 
@@ -17,8 +18,9 @@ steps{
                              file1 = readYaml file: "input_template.yaml"
                               name = file1['app']['name']
                               email = file1['app']['email']
-                              regions = file1['app']['region'][0]
-                              envprops = file1['env_prop']['qa']
+                              regions1 = file1['app']['region'][0]
+                        regions2 = file1['app']['region'][01]
+                              envprops = file1['env_prop']['qa'][0]
                         
                             
                             
@@ -32,7 +34,7 @@ steps{
       
         echo "${name}"
         echo "${email}"
-        echo "${regions}"
+        echo "${regions1}"
         echo "${envprops}"
       
      
