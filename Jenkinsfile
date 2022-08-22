@@ -19,10 +19,12 @@ script{
 }
    stage("Reading attribute from yaml")
    {
+      steps{
       sh '''
       echo file1[app]
       
       '''
+      }
    }
 }
 }
