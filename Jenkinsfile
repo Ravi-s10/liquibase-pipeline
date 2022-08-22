@@ -5,11 +5,17 @@ pipeline {
       stage("Read File") {
       steps{
         script{
-          yamlfile= readYaml file: "./input_template.yaml
+          yamlfile= readYaml file: "input_template.yaml
           echo "yamlfile: " + yamlfile
           echo yamlfile['app'['id']
                     }
       }
+                        stage("test")
+                        {
+                          step{
+                            echo "hello"
+                          }
+                        }
     }
   }
 }
