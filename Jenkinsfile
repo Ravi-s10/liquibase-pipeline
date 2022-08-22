@@ -7,13 +7,6 @@ def region2
 def envprops
 
                         
-def is_skip(){
-  
-  if (envprops == "true")
-  println("okayyy")
- 
-  
-}
 
 
 
@@ -55,6 +48,14 @@ steps{
       }
    }
 }
+  def is_skip(){
+  
+  if (envprops == "true")
+  println("okayyy")
+ 
+  
+}
+
 }
 
 
