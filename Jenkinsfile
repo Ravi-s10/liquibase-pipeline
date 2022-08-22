@@ -28,7 +28,7 @@ steps{
    {
       steps{
       
-        echo ${name}
+        echo "${name}"
       
      
       }
