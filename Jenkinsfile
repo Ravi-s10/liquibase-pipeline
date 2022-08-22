@@ -1,4 +1,4 @@
-def yamlfile
+def file1
 
 
 pipeline {
@@ -11,7 +11,9 @@ stage("Build"){
 steps{
 script{
    echo "echo"
-     echo  pwd
+   file1 = readYaml file: "input_template.yaml"
+   echo "file1" + file1
+     
   
 }
 }
