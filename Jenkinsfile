@@ -15,8 +15,10 @@ steps{
                       script{
                              echo "echo"
                              file1 = readYaml file: "input_template.yaml"
-                             echo "file1" + file1 
                               name = file1['app']['name']
+                              email = file1['app']['email']
+                              regions = file1['app']['region']
+                              envprops = file1['env_prop']['qa']
                         
                             
                             
@@ -29,6 +31,9 @@ steps{
       steps{
       
         echo "${name}"
+        echo "${email}"
+        echo "${regions}"
+        echo "${envprops}"
       
      
       }
