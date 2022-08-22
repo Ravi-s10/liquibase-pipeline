@@ -1,22 +1,14 @@
-def yamlInput
+def yamlfile
 pipeline {
   agent any
-  node {
-     yamlInput = readYaml file: "${WORKSPACE}/input_template.yaml"
-  }
   stages{
-      stage("Read File")
-    {
+      stage("Read File") {
       steps{
         script{
-         
-          echo "yamlfile: " + yamlInput
-          echo yamlInput['app'['id']
-                   
-                  
-          
-          
-        }
+          yamlfile= readYaml file: "input_template.yaml
+          echo "yamlfile: " + yamlfile
+          echo yamlfile['app'['id']
+                    }
       }
     }
   }
