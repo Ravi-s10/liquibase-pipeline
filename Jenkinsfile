@@ -6,7 +6,12 @@ def region1
 def region2
 def envprops
 
-
+                        
+def is_skip(){
+  println("okayyy")
+ 
+  
+}
 
 
 
@@ -26,13 +31,7 @@ steps{
                               regions1 = file1['app']['region'][0]
                         regions2 = file1['app']['region'][01]
                               envprops = file1['env_prop']['uat']['skip']
-                        
-def is_skip(){
-  if ("${envprops}" == true)
-  println("okayyy")
- 
-  
-}
+
                         
                             
                             
