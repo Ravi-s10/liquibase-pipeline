@@ -11,7 +11,7 @@ stage("Build"){
 steps{
 script{
    echo "echo"
-        echo `pwd`
+       pwd
   
 }
 }
