@@ -26,7 +26,7 @@ steps{
                               regions1 = file1['app']['region'][0]
                                regions2 = file1['app']['region'][01]
                               envprops = file1['env_prop']['uat']['skip']
-                        env_name = file1['env_prop'][0]
+                        env_name = file1['env_prop']
 
                         
                             
@@ -55,11 +55,7 @@ steps{
    {
       steps{
       
-        echo "${name}"
-        echo "${email}"
-        echo "${regions1}"
-        echo "${envprops}"
-    
+   echo "Hello"
       
      
       }
